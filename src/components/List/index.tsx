@@ -3,7 +3,7 @@ import { CardList } from './styles';
 import { CardData } from "../types";
 import Card from "../Card";
 
-const List = ({ match, history }) => (
+const List = () => (
   <CardList>
     {cardData.map(card => (
       <Card
