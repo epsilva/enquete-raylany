@@ -1,6 +1,5 @@
 import * as React from "react";
 import { motion, useInvertedScale } from "framer-motion";
-import { closeSpring } from "./animations";
 import { CardImageContainer } from './styles';
 
 export const Image = ({
@@ -18,7 +17,6 @@ export const Image = ({
         src={`images/${id}.jpg`}
         alt=""
         initial={false}
-        transition={closeSpring}
       />
     </CardImageContainer>
   );

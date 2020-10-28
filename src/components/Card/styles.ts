@@ -116,7 +116,6 @@ export const PriceContainer = styled(motion.div)`
 export const SidebarContainer = styled(motion.div)`
     position: absolute;
     top: 0;
-    left: ${props => props.isOpen ? '0' : '-80px'};;
     bottom: 0;
     width: 300px;
     transition: all .2s ease-in-out;

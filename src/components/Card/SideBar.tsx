@@ -32,7 +32,7 @@ const SideBar = ({isOpen, description}) => {
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}
     >
-        <SidebarContainer variants={sidebar} isOpen={isOpen}>
+        <SidebarContainer variants={sidebar} style={{left: isOpen ? '0' : '-80px'}} >
             <Description description={description}/>
         </SidebarContainer>
     </motion.nav>
