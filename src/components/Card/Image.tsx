@@ -5,13 +5,14 @@ import { CardImageContainer } from './styles';
 
 export const Image = ({
   id,
-  backgroundColor
+  toggleOpen
 }) => {
   const inverted = useInvertedScale();
 
   return (
     <CardImageContainer
-      style={{ ...inverted, backgroundColor, originX: 0, originY: 0 }}
+      style={{ ...inverted, originX: 0, originY: 0 }}
+      onClick={() => toggleOpen()}
     >
       <motion.img
         src={`images/${id}.jpg`}

@@ -5,4 +5,9 @@ export const CardList = styled.ul`
     flex-wrap: wrap;
     align-content: flex-start;
     list-style: none;
+    padding:  0 10%;
+
+    @media only screen and (max-width: 600px) {
+        padding: 0;
+    }
 `;
